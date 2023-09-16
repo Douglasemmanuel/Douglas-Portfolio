@@ -64,7 +64,7 @@ html{
     gap: 2rem;
 }
 .image-container{
-    width:300px;
+    width:250px;
     clip-path: circle();
 }
 .mydetails-intro3{
