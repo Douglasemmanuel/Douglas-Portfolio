@@ -38,3 +38,14 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
+function toggleButton(){
+  const button = document.getElementsByClassName('hover-button');
+  
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+}

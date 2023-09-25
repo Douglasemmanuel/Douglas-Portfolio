@@ -197,3 +197,34 @@ a{
     margin-top: 2rem;
     padding: 10px 14px;
 }
+.hover-button{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px ;
+    border: none;
+    cursor: pointer;
+}
+.hover-button2{
+    display: none;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px ;
+    border: none;
+    cursor: pointer;
+}
+.project-image{
+    position: relative;
+    display: inline-block;
+}
+/* .project-picture:hover + .hover-button {
+    display: block;
+} */

@@ -45,7 +45,8 @@
                         love.</br> </p>
                 </div>
                 <div class="mydetails-intro3">
-                    <a download="" href="#" class="button button--flex">
+                    <a  href="../DouglasCV.pdf"  class="button button--flex" download="Douglas CV">
+
                         <!-- <input type="file"/> -->
                         Download CV <i class="uil uil-download-alt button_icon"></i>
                     </a>
@@ -105,9 +106,10 @@
                 <p class="come">contact me</p>
             </div>
             <div class="myproject-container">
-                <div class="project-info-container" onclick="window.location.href='https://github.com/Douglasemmanuel/Resturante';">
+                <div class="project-info-container" >
                     <div class="project-image">
-                        <img src="./images/Screenshot (139).png" alt="" class="project-picture">
+                        <img src="./images/Screenshot (139).png" alt="" class="project-picture"  onclick="toggleButton1()">
+                        <button class="hover-button" id="hover-button1" onclick="window.location.href='https://github.com/Douglasemmanuel/Resturante';">Github Repo </button>
                     </div>
                     <p class="project-name">Ecommerce Website </p>
                     <p class="project-skills"> Html  Css  JavaScript</p>
@@ -122,9 +124,10 @@
                     <p class="project-name">Ecommerce Website </p>
                     <p class="project-skills"> Html  Css  JavaScript</p>
                 </div> -->
-                <div class="project-info-container" onclick="window.location.href='https://github.com/Douglasemmanuel/First-portfolio-website';">
+                <div class="project-info-container" >
                     <div class="project-image">
-                        <img src="./images/Screenshot (286).png" alt="" class="project-picture">
+                        <img src="./images/Screenshot (286).png" alt="" class="project-picture"  onclick="toggleButton2()">
+                        <button class="hover-button" id="hover-button2" onclick="window.location.href='https://github.com/Douglasemmanuel/First-portfolio-website';"> Github Repo </button>
                     </div>
                     <p class="project-name">Portfolio Website </p>
                     <p class="project-skills"> Html  Css  JavaScript</p>
@@ -136,33 +139,52 @@
                     <p class="project-name">Resturant Website </p>
                     <p class="project-skills"> Html  Css  JavaScript</p>
                 </div> -->
-                <div class="project-info-container" onclick="window.location.href='https://github.com/Douglasemmanuel/FormValidation';">
+                <div class="project-info-container" >
                     <div class="project-image">
-                        <img src="./images/Screenshot (289).png" alt="" class="project-picture">
+                        <img src="./images/Screenshot (289).png" alt="" class="project-picture"  onclick="toggleButton3()">
+                        <button class="hover-button" id="hover-button3" onclick="window.location.href='https://github.com/Douglasemmanuel/FormValidation';"> Github Repo </button>
                     </div>
                     <p class="project-name">Input Validation </p>
                     <p class="project-skills"> Html  Css  JavaScript</p>
                 </div>
-                <div class="project-info-container" onclick="window.location.href='https://github.com/Douglasemmanuel/RestCountries';">
+                <div class="project-info-container" >
                     <div class="project-image">
-                        <img src="./images/Screenshot (292).png" alt="" class="project-picture">
+                        <img src="./images/Screenshot (292).png" alt="" class="project-picture"  onclick="toggleButton4()">
+                        <button class="hover-button" id="hover-button4" onclick="window.location.href='https://github.com/Douglasemmanuel/RestCountries';">Github Repo </button>
                     </div>
                     <p class="project-name">Country Finder </p>
                     <p class="project-skills"> Html  Css  JavaScript Countries-Api</p>
                 </div>
-                <div class="project-info-container" onclick="window.location.href='https://github.com/Douglasemmanuel/Netflix-clone';">
+                <div class="project-info-container" >
                     <div class="project-image">
-                        <img src="./images/Screenshot (291).png" alt="" class="project-picture">
+                        <img src="./images/Screenshot (291).png" alt="" class="project-picture" onclick="toggleButton5()">
+                        <button class="hover-button" id="hover-button5" onclick="window.location.href='https://github.com/Douglasemmanuel/Netflix-clone';">Frontend Github Repo</button>
+                        <button class="hover-button2" id="hover-button5a" onclick="window.location.href='https://github.com/Douglasemmanuel/Authentication-ReactNative-and-Django-/tree/main/backend';" >Backend Github Repo</button>
+                 
                     </div>
-                    <p class="project-name">Netflix Web-App </p>
+                    <p class="project-name">Netflix Web-App Clone </p>
                     <p class="project-skills"> React  Redux  Django Postgress</p>
                 </div>
-                  <div class="project-info-container" onclick="window.location.href='';">
+                <!-- onclick="window.location.href='';" -->
+                  <div class="project-info-container" >
                     <div class="project-image" >
-                        <img src="./images/Screenshot (302).png" alt="" class="project-picture">
+                        <img src="./images/Screenshot (302).png" alt="" class="project-picture" onclick="toggleButton7()">
+                        <button class="hover-button" id="hover-button7">The Github Repo is confidential</button>
                     </div>
+                    <!-- <button >Backend Github Repo</button> -->
+
                     <p class="project-name">Ecommerce Web App </p>
                     <p class="project-skills">  React  Redux  Django Postgress</p>
+                </div>
+                <div class="project-info-container" >
+                    <div class="project-image">
+                        <img src="./images/Screenshot (291).png" alt="" class="project-picture" onclick="toggleButton6()">
+                        <button class="hover-button" id="hover-button6" onclick="window.location.href='https://github.com/Douglasemmanuel/Netflix-clone';">Frontend Github Repo</button>
+                        <button class="hover-button2" id="hover-button6a" onclick="window.location.href='https://github.com/Douglasemmanuel/Authentication-ReactNative-and-Django-/tree/main/backend';" >Backend Github Repo</button>
+                 
+                    </div>
+                    <p class="project-name">Netflix Web-App Clone </p>
+                    <p class="project-skills"> React  Redux  Django Postgress</p>
                 </div>
             </div>
         </div>
@@ -252,11 +274,83 @@
     <!-- </div> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- <script type="text/javascript"   src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function(){
         emailjs.init("ZxiQ7o3QStyEi2t2Y");
         })();
         // emailjs.init('ZxiQ7o3QStyEi2t2Y')
+      </script> -->
+      <script >
+        function toggleButton(){
+  const button = document.getElementById("hover-button");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+};
+function toggleButton1(){
+  const button = document.getElementById("hover-button1");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+};
+function toggleButton2(){
+  const button = document.getElementById("hover-button2");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+};
+function toggleButton3(){
+  const button = document.getElementById("hover-button3");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+};
+function toggleButton4(){
+  const button = document.getElementById("hover-button4");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+};
+function toggleButton5(){
+  const button = document.getElementById("hover-button5");
+  const button2 = document.getElementById("hover-button5a");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+    button2.style.display = "Block";
+  }else{
+    button.style.display = "none";
+    button2.style.display = "Block";
+  }
+};
+function toggleButton6(){
+  const button = document.getElementById("hover-button6");
+  const button2 = document.getElementById("hover-button6a");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+    button2.style.display = "Block";
+  }else{
+    button.style.display = "none";
+    button2.style.display = "none";
+  }
+};
+function toggleButton7(){
+  const button = document.getElementById("hover-button7");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+  }else{
+    button.style.display = "none";
+  }
+}
       </script>
     <!-- <script src="/portfolio.js"></script> -->
     
