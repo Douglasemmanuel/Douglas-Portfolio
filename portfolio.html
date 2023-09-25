@@ -33,7 +33,8 @@
         </nav>
         <div class="top-container">
             <div class="image-container">
-                <img src="./images/man2.jpg" alt="">
+                <!-- <img src="./images/man2.jpg" alt=""> -->
+                <img src="./images/DOUGLAS PICTURE3.jpg" alt="" class="picture">
             </div>
             <div class="mydetails">
                 <div class="mydetails-intro">
@@ -169,7 +170,7 @@
                   <div class="project-info-container" >
                     <div class="project-image" >
                         <img src="./images/Screenshot (302).png" alt="" class="project-picture" onclick="toggleButton7()">
-                        <button class="hover-button" id="hover-button7">The Github Repo is confidential</button>
+                        <button class="hover-button" id="hover-button7">This Github Repo is confidential</button>
                     </div>
                     <!-- <button >Backend Github Repo</button> -->
 
@@ -178,13 +179,14 @@
                 </div>
                 <div class="project-info-container" >
                     <div class="project-image">
-                        <img src="./images/Screenshot (291).png" alt="" class="project-picture" onclick="toggleButton6()">
-                        <button class="hover-button" id="hover-button6" onclick="window.location.href='https://github.com/Douglasemmanuel/Netflix-clone';">Frontend Github Repo</button>
-                        <button class="hover-button2" id="hover-button6a" onclick="window.location.href='https://github.com/Douglasemmanuel/Authentication-ReactNative-and-Django-/tree/main/backend';" >Backend Github Repo</button>
+                        <img src="./images/Screenshot (297).png" alt="" class="project-picture" onclick="toggleButton6()">
+                        <button class="hover-button" id="hover-button6" onclick="window.location.href='https://github.com/Douglasemmanuel/React-auth-with-Django';">Frontend Github Repo</button>
+                        <button class="hover-button2" id="hover-button6a" onclick="window.location.href='https://github.com/Douglasemmanuel/DjangoRestFramework-backend';" >Backend Github Repo</button>
                  
                     </div>
-                    <p class="project-name">Netflix Web-App Clone </p>
-                    <p class="project-skills"> React  Redux  Django Postgress</p>
+                    <p class="project-name">Authentication Web App  </p>
+                    <p class="project-skills">Features:     ,Register       ,Login     ,Two-Factor(OTP)      ,Reset-Password ,Change-Password , Display a User-Details</p>
+                    <p class="project-skills"> React  Redux  Django Postgress   PostMan(For testing API)</p>
                 </div>
             </div>
         </div>
@@ -196,7 +198,7 @@
             </div>
             <div class="contact-container2">
                 <div class="contact-form">
-                    <form action="" id="form">
+                    <form action="" id="form" onsubmit="handleForm()">
                         <div class="game ">
                             <div class="contact_content ">
                                 <label for="" class="contact_label begin10">Name</label>
@@ -228,14 +230,14 @@
                             </div>
 
                         </div>
-                        <div class="food" onclick="sendmail()" id="button" value="Send Email">
+                        <button class="food" type="submit" id="button" value="Send Email">
                             Send Message
                             <i class="uil uil-message button_icon"></i>
                             <!-- <a href="" class=" button--flex">
                                 Send Message
                                 <i class="uil uil-message button_icon"></i>
                             </a> -->
-                        </div>
+                        </button>
 
                     </form>
                 </div>
@@ -274,14 +276,23 @@
     <!-- </div> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- <script type="text/javascript"   src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         (function(){
         emailjs.init("ZxiQ7o3QStyEi2t2Y");
         })();
         // emailjs.init('ZxiQ7o3QStyEi2t2Y')
-      </script> -->
+      </script>
       <script >
-        function toggleButton(){
+        const handleForm = async (e)=>{
+            try{
+                await email.js.sendForm('service_bg0r2xn', 'template_74klvhn' , document.getElementById('form'))
+                alert('email sent!')
+            }catch(error){
+                console.error(error);
+                alert('Failed to send Email')
+            }
+        }
+    function toggleButton(){
   const button = document.getElementById("hover-button");
   if(button.style.display  === "none" || button.style.display === ""){
     button.style.display = "Block";
