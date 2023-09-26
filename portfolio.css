@@ -238,3 +238,27 @@ a{
 /* .project-picture:hover + .hover-button {
     display: block;
 } */
+
+@media screen and (max-width:320px) {
+
+    .project-picture{
+
+    width: 250px;
+}
+.portfolio-container{
+    padding-left: 0.5rem;
+} 
+.project-skills{
+    font-size: 0.7rem;
+}
+}
+@media screen and (max-width:425px) {
+
+    .project-picture{
+
+    width: 300px;
+   }
+   .portfolio-container{
+    padding-left: 2rem;
+}
+}

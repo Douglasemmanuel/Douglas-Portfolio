@@ -58,7 +58,7 @@
             <div class="status">
                 <div class="status-icon">
                     <h4>Accessibility</h4>
-                    <p class="year"> 1 + </p>
+                    <p class="year"> 2 + </p>
                     <p>Year</p>
                     <p> Experience</p>
                     <div class="skills-icons">
@@ -185,10 +185,20 @@
                  
                     </div>
                     <p class="project-name">Authentication Web App  </p>
-                    <p class="project-skills">Features:     ,Register       ,Login     ,Two-Factor(OTP)      ,Reset-Password ,Change-Password , Display a User-Details</p>
+                    <p class="project-skills">Features: Register ,Login,Two-Factor(OTP),</p>
+                     <p class="project-skills">Reset-Password,Change-Password,Display a User-Details</p>
                     <p class="project-skills"> React  Redux  Django Postgress   PostMan(For testing API)</p>
                 </div>
-            </div>
+                <!-- <div class="project-info-container" >
+                    <div class="project-image">
+                        <img src="./images/Screenshot (292).png" alt="" class="project-picture"  onclick="toggleButton8()">
+                        <button class="hover-button" id="hover-button8" onclick="window.location.href='https://github.com/Douglasemmanuel/RestCountries';">Github Repo </button>
+                        <button class="hover-button" id="hover-button8a" onclick="window.location.href='https://github.com/Douglasemmanuel/RestCountries';">Github Repo </button>
+                    </div>
+                    <p class="project-name">Country Finder </p>
+                    <p class="project-skills"> Html  Css  JavaScript Countries-Api</p>
+                </div>
+            </div> -->
         </div>
         <div class="contact-container">
             <div class="contact-container1">
@@ -362,6 +372,17 @@ function toggleButton7(){
     button.style.display = "none";
   }
 }
+function toggleButton8(){
+  const button = document.getElementById("hover-button8");
+  const button2 = document.getElementById("hover-button8a");
+  if(button.style.display  === "none" || button.style.display === ""){
+    button.style.display = "Block";
+    button2.style.display = "Block";
+  }else{
+    button.style.display = "none";
+    button2.style.display = "none";
+  }
+};
       </script>
     <!-- <script src="/portfolio.js"></script> -->
     
